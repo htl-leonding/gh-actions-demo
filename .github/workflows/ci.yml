@@ -25,5 +25,5 @@ jobs:
 
       - name: Build
         run: |
-          ./mvnw verify -B
-          echo hello world!
+          ./mvnw package -B
+          docker image ls
